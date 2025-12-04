@@ -1,0 +1,107 @@
+/*
+ * Guy's Study Hub - Custom Styles
+ * עיצוב מותאם אישית
+ */
+
+/* ========================= */
+/* 1. הגדרות גלובליות וטיפוגרפיה */
+/* ========================= */
+
+body {
+    /* שימוש בפונט Rubik שהוטען ב-HTML */
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    /* ✅ הרקע החדש: שמנת חמה ועדינה (#fcfcf0) ✅ */
+    background-color: #fcfcf0; 
+    
+    color: #333333; /* צבע טקסט כמעט שחור */
+}
+
+/* ========================= */
+/* 2. כותרות וקומפוננטות יסוד */
+/* ========================= */
+
+/* כותרת ראשית (Guy's Study Hub) */
+header h1 {
+    font-weight: 700;
+    color: #212529; /* כמעט שחור חזק */
+    padding-bottom: 15px;
+    border-bottom: 2px solid #333333; /* קו תחתון באפור-פחם */
+    margin-bottom: 30px !important;
+}
+
+/* כותרות משנה (כמו "Behind the Hub" או "The Courses") */
+h3, h2 {
+    font-weight: 600;
+    color: #333333; /* אפור-פחם */
+}
+
+/* כפתורים וקישורים ראשיים (האפור-פחם) */
+/* שימוש ב-a.btn-primary כדי להגביר ספציפיות ולנצח את Bootstrap */
+a.btn-primary { 
+    background-color: #333333 !important; /* אפור-פחם ראשי */
+    border-color: #333333 !important;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+a.btn-primary:hover {
+    background-color: #1a1a1a !important; /* כהה יותר בריחוף */
+    border-color: #1a1a1a !important;
+}
+
+/* כללי בסיס נוספים לכפתורים */
+.btn-primary { 
+    background-color: #333333 !important;
+    border-color: #333333 !important;
+}
+
+
+/* ========================= */
+/* 3. עיצוב כרטיסי הקורסים */
+/* ========================= */
+
+.card {
+    /* הופך את הכרטיסים ללבנים לחלוטין (כדי שיהיה ניגוד לרקע השמנת החמה) */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 12px;
+    border: none;
+    background-color: #ffffff; /* רקע לבן חזק לכרטיסים */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* צל מעודן מאוד */
+    height: 100%; /* מוודא שכל הכרטיסים באותו גובה */
+}
+
+/* אפקט ריחוף (Hover) על כרטיס */
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important; /* צל חזק יותר בריחוף */
+}
+
+.card-title {
+    font-weight: 600; /* הדגשת שם הקורס */
+    color: #333333; /* צבע שם הקורס באפור-פחם */
+}
+
+/* טקסט תיאור הקורס */
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d; /* אפור כהה יותר, קריא ורציני */
+}
+
+/* ========================= */
+/* 4. עיצוב אלמנטים נוספים ופוטר */
+/* ========================= */
+
+/* כפתור "חזרה" בעמודי הקורס */
+.btn-outline-secondary {
+    margin-bottom: 15px;
+    border-color: #aaaaaa;
+    color: #555555;
+}
+
+/* הגדלת איקון המייל */
+.email-icon {
+    font-size: 1.5rem; 
+    margin-right: 5px; 
+    display: inline-block; 
+}

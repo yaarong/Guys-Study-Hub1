@@ -8,5 +8,10 @@
     "id": 2,
     "title": "סיכום על אנובה ב2 משתנים ",
     "filename": "anova.pdf"
+  },
+  {
+    "id": 3,
+    "title": "סיכום על רגרסיה לינארית ",
+    "filename": "reg.pdf"
   }
 ]

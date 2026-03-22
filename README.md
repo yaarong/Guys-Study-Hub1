@@ -1,4 +1,4 @@
-🎓 Guy's Study Hub
+#🎓 Guy's Study Hub
 The Academic Repository for Computer Science Summaries
 
 Welcome to the official repository for Guy's Study Hub. This project hosts the source code and content for a centralized platform dedicated to high-quality summaries, practice materials, and study guides for core Computer Science courses—specifically tailored for students at Bar-Ilan University.

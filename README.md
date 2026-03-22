@@ -8,18 +8,6 @@ Welcome to the official repository for Guy's Study Hub. This project hosts the s
 📚 What's Inside?
 This hub was created to bridge the gap between complex lectures and clear, visual understanding. All summaries are meticulously authored using LyX and rendered into web-friendly formats.
 
-Featured Courses:
-Algorithms I & II: Network Flow, FFT, Randomized Algorithms, and Dynamic Programming.
-
-Computer Organization: x86-64 Assembly, processor architecture, and memory management.
-
-Statistics & Probability: Foundations and advanced topics for CS majors.
-
-System Programming: C programming, process management, and low-level systems.
-
 🛠 Tech Stack
 Frontend: HTML5, CSS3 (Clean, responsive design).
-
 Hosting: GitHub Pages.
-
-Typesetting: LyX & LaTeX (For precise mathematical notation).

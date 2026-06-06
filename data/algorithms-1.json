@@ -1,82 +1,16 @@
 [
-  {
-  "id": 0,
-  "title": "סיכום מתומצת אלגוריתמים 1",
-  "filename": "algTest.pdf"
-},
-  {
-  "id": 1,
-  "title": " סיכום הרצאות אלגוריתמים 1",
-  "filename": "algo1-final.pdf"
-},
-{
-  "id": 2,
-  "title": "סיכום הרצאה 1",
-  "filename": "l1.pdf"
-},
-{
-  "id": 3,
-  "title": "סיכום הרצאה 2",
-  "filename": "l2.pdf"
-},
-{
-  "id": 4,
-  "title": "סיכום הרצאה 3",
-  "filename": "l3.pdf"
-},
-{
-  "id": 5,
-  "title": "סיכום הרצאה 4",
-  "filename": "l4.pdf"
-},
-{
-  "id": 6,
-  "title": "סיכום הרצאה 5",
-  "filename": "l5.pdf"
-},
-{
-  "id": 7,
-  "title": "סיכום הרצאה 6",
-  "filename": "l6.pdf"
-},
-  {
-  "id": 8,
-  "title": "סיכום הרצאה 7",
-  "filename": "l7.pdf"
-},
-  {
-  "id": 9,
-  "title": "סיכום הרצאה 8",
-  "filename": "l8.pdf"
-},
-  {
-  "id": 10,
-  "title": "סיכום הרצאה 9",
-  "filename": "l9.pdf"
-},
-  {
-  "id": 11,
-  "title": " סיכום הרצאה 10",
-  "filename": "l10.pdf"
-},
-  {
-  "id": 12,
-  "title": " פורד פרקלסון עלול להכשל: השלמה מהרצאה 6",
-  "filename": "ford.pdf"
-},
-  {
-  "id": 13,
-  "title": "סיכום הרצאה 11",
-  "filename": "l11.pdf"
-},
-  {
-  "id": 14,
-  "title": "סיכום הרצאה 12",
-  "filename": "l12.pdf"
-},
-  {
-  "id": 15,
-  "title": "פתרון מבחנים אלגוריתמים 1 - בר אילן",
-  "filename": "all.pdf"
-  }
+  { "id": 0, "title": "סיכום מתומצת אלגוריתמים 1", "filename": "algTest.pdf" },
+  { "id": 1, "title": "סיכום הרצאות אלגוריתמים 1", "filename": "algo1-final.pdf" },
+  { "id": 2, "title": "סיכום הרצאה 1", "filename": "l1.pdf" },
+  { "id": 3, "title": "סיכום הרצאה 2", "filename": "l2.pdf" },
+  { "id": 4, "title": "סיכום הרצאה 3", "filename": "l3.pdf" },
+  { "id": 5, "title": "סיכום הרצאה 4", "filename": "l4.pdf" },
+  { "id": 6, "title": "סיכום הרצאה 5", "filename": "l5.pdf" },
+  { "id": 7, "title": "סיכום הרצאה 6", "filename": "l6.pdf" },
+  { "id": 8, "title": "סיכום הרצאה 7", "filename": "l7.pdf" },
+  { "id": 9, "title": "סיכום הרצאה 8", "filename": "l8.pdf" },
+  { "id": 10, "title": "סיכום הרצאה 9", "filename": "l9.pdf" },
+  { "id": 11, "title": "סיכום הרצאה 10", "filename": "l10.pdf" },
+  { "id": 12, "title": "סיכום הרצאה 11", "filename": "l11.pdf" },
+  { "id": 13, "title": "סיכום הרצאה 12", "filename": "l12.pdf" }
 ]

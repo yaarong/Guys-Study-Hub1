@@ -101,7 +101,114 @@ a.btn-primary:hover {
 
 /* הגדלת איקון המייל */
 .email-icon {
-    font-size: 1.5rem; 
-    margin-right: 5px; 
-    display: inline-block; 
+    font-size: 1.5rem;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* ========================= */
+/* 5. כפתור Dark Mode        */
+/* ========================= */
+
+#dark-mode-btn {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333333;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dark-mode-btn:hover {
+    background-color: #1a1a1a;
+    transform: scale(1.08);
+}
+
+/* ========================= */
+/* 6. Dark Mode styles       */
+/* ========================= */
+
+.dark-mode body {
+    background-color: #111118;
+    color: #e2e2e2;
+}
+
+.dark-mode .card,
+.dark-mode .semester-card,
+.dark-mode .course-row {
+    background-color: #1e1e2e !important;
+    color: #e2e2e2;
+}
+
+.dark-mode #about {
+    background-color: #1e1e2e !important;
+    border-color: #333 !important;
+}
+
+.dark-mode .card-title,
+.dark-mode .course-title,
+.dark-mode .semester-title,
+.dark-mode h2, .dark-mode h3 {
+    color: #e2e2e2 !important;
+}
+
+.dark-mode .card-text,
+.dark-mode .course-desc,
+.dark-mode .semester-count,
+.dark-mode .semester-label,
+.dark-mode .text-muted {
+    color: #999 !important;
+}
+
+.dark-mode .list-group-item {
+    background-color: #1e1e2e;
+    border-color: #333;
+    color: #e2e2e2;
+}
+
+.dark-mode .btn-outline-secondary {
+    color: #aaa;
+    border-color: #555;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header h1 {
+    border-bottom-color: #444;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+.dark-mode #about p {
+    color: #d0d0d0 !important;
+}
+
+.dark-mode .course-row .course-arrow {
+    color: #666 !important;
+}
+
+.dark-mode #dark-mode-btn {
+    background-color: #e2e2e2;
+    color: #111118;
+}
+
+.dark-mode #dark-mode-btn:hover {
+    background-color: #fff;
 }

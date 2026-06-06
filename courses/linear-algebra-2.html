@@ -1,70 +1,132 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear Algebra II | סיכומים</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css"> 
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .course-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #4361ee 100%);
+            padding: 1.6rem 2rem;
+            border-radius: 16px;
+            margin: 2rem auto 2.2rem;
+            max-width: 860px;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        .course-hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+            background: none !important;
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+            margin-bottom: 0.2rem !important;
+            font-size: 1.9rem;
+            text-align: right;
+        }
+        .course-hero .hero-subtitle {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.88rem;
+            margin: 0;
+            text-align: right;
+        }
+        .course-hero .hero-text { flex: 1; }
+        .summaries-section {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 1rem 3rem;
+        }
+        .summaries-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+        }
+        .summary-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 1.1rem 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+            margin-bottom: 0.9rem;
+            text-decoration: none;
+            color: inherit;
+        }
+        .summary-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(67,97,238,0.15);
+            color: inherit;
+            text-decoration: none;
+        }
+        .summary-card .card-label {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #212529;
+        }
+        .summary-card .card-action {
+            background: linear-gradient(135deg, #1a1a2e 0%, #4361ee 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-family: 'Rubik', sans-serif;
+            cursor: pointer;
+        }
+        .dark-mode .course-hero { background: #1e1e2e; }
+        .dark-mode .summary-card { background: #1e1e2e !important; }
+        .dark-mode .summary-card .card-label { color: #e2e2e2; }
+    </style></head>
 <body>
-    <div class="container my-5">
-        <header class="mb-5">
-            <a href="../index.html" class="btn btn-outline-secondary float-start">Back</a>
-            <h1 class="text-center">📝 Linear Algebra II Summaries</h1>
-            <p class="lead text-center">Determinants, Eigenvalues, Diagonalization, Jordan Form, Inner Product Spaces</p>
-        </header>
+    <div class="course-hero">
+        <a href="../index.html" class="btn btn-outline-light btn-sm">← Back</a>
+        <span style="font-size: 2.6rem; flex-shrink: 0;">🔢</span>
+        <div class="hero-text">
+            <h1>Linear Algebra II</h1>
+            <p class="hero-subtitle">Determinants, Eigenvalues, Diagonalization, Jordan Form, Inner Product Spaces</p>
+        </div>
+    </div>
 
-        <section id="summaries-list" class="mt-4">
-            <h2 class="mb-3">Summeries</h2>
-            <ul id="summaries-container" class="list-group shadow-sm">
-                </ul>
-        </section>
-        
+    <div class="summaries-section">
+        <h2>Summaries</h2>
+        <div id="summaries-container"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
-        const courseName = "linear-algebra-2"; // שם הקורס (כדי לקרוא את קובץ ה-JSON הנכון)
+        const courseName = "linear-algebra-2";
         const container = document.getElementById('summaries-container');
-
-        // פונקציה אסינכרונית לקריאת קובץ JSON
         async function loadSummaries() {
             try {
-                // נתיב לקובץ ה-JSON
-                const response = await fetch(`../data/${courseName}.json`); 
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const summaries = await response.json(); // הופך את הטקסט JSON למערך אובייקטים
-
-                // יוצר רשימה עבור כל סיכום במערך
+                const response = await fetch('../data/' + courseName + '.json');
+                if (!response.ok) throw new Error('File not found');
+                const summaries = await response.json();
                 summaries.forEach(summary => {
-                    const listItem = document.createElement('li');
-                    // הוספת קלאסים של Bootstrap לעיצוב
-                    listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
-                    
-                    // יוצר קישור לקובץ ה-PDF
-                    const pdfPath = `../pdfs/${courseName}/${summary.filename}`;
-                    
-                    listItem.innerHTML = `
-                        <span>${summary.id}. ${summary.title}</span>
-                        <a href="${pdfPath}" target="_blank" class="btn btn-sm btn-primary">צפייה בסיכום (PDF)</a>
-                    `;
-                    
-                    container.appendChild(listItem);
+                    const pdfPath = '../pdfs/' + courseName + '/' + summary.filename;
+                    const card = document.createElement('a');
+                    card.href = pdfPath;
+                    card.target = '_blank';
+                    card.className = 'summary-card';
+                    card.innerHTML = '<span class="card-label">' + summary.title + '</span><button class="card-action">צפייה בסיכום (PDF)</button>';
+                    container.appendChild(card);
                 });
-
             } catch (error) {
-                // במקרה של תקלה (למשל, קובץ JSON חסר)
-                container.innerHTML = `<li class="list-group-item list-group-item-danger">אירעה שגיאה בטעינת הסיכומים: ${error.message}</li>`;
-                console.error('Error loading summaries:', error);
+                container.innerHTML = '<p class="text-danger">שגיאה בטעינת הקבצים</p>';
             }
         }
-
-        loadSummaries(); // הפעלת הפונקציה בעת טעינת העמוד
-    </script>
+        loadSummaries();
+    </script>    <script src="../js/darkmode.js"></script>
 </body>
 </html>

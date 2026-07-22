@@ -1,7 +1,12 @@
-﻿[
+[
   {
     "id": 1,
     "title": "למידת מכונה - סיכום הרצאות",
     "filename": "ml.pdf"
+  },
+  {
+    "id": 2,
+    "title": "סיכום על PCA",
+    "filename": "pca.pdf"
   }
 ]

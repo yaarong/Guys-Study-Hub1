@@ -8,5 +8,15 @@
     "id":2,
     "title":"סיכום הגדרות וטענות",
     "filename": "mh.pdf"
+  },
+  {
+    "id": 3,
+    "title": "פתרון מבחנים 2021-2025",
+    "filename": "sol.pdf"
+  },
+  {
+    "id": 4,
+    "title": "טריקים ושטיקים",
+    "filename": "tricks.pdf"
   }
 ]

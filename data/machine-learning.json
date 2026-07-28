@@ -13,5 +13,10 @@
     "id": 3,
     "title": "סיכום EM",
     "filename": "em.pdf"
+  },
+  {
+    "id": 4,
+    "title": "פתרון מבחנים 2023-2025",
+    "filename": "sol.pdf"
   }
 ]

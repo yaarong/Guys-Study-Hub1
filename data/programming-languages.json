@@ -3,5 +3,10 @@
     "id": 1,
     "title": "סיכום תרגולים",
     "filename": "sf.pdf"
+  },
+  {
+    "id": 2,
+    "title": "הרצאה 1 - סיכום",
+    "filename": "pl1.pdf"
   }
 ]

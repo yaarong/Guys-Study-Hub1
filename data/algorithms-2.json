@@ -3,5 +3,10 @@
     "id": 1,
     "title": "הרצאה 1 - סיכום",
     "filename": "al1.pdf"
+  },
+  {
+    "id": 2,
+    "title": "הרצאה 2 - סיכום",
+    "filename": "al2.pdf"
   }
 ]

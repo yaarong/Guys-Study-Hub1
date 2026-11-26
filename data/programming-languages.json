@@ -23,5 +23,20 @@
     "id": 4,
     "title": "הרצאה 3 - סיכום",
     "filename": "pl3.pdf"
+  },
+  {
+    "id": 6,
+    "title": "הרצאה 4 - סיכום",
+    "filename": "pl4.pdf"
+  },
+  {
+    "id": 7,
+    "title": "הרצאה 5 - סיכום",
+    "filename": "pl5.pdf"
+  },
+  {
+    "id": 8,
+    "title": "הרצאה 6 - סיכום",
+    "filename": "pl6.pdf"
   }
 ]
